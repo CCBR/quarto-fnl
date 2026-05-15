@@ -7,16 +7,16 @@ website:
   repo-url: https://github.com/CCBR/quarto-fnl
   repo-actions: [edit, issue]
   site-url: https://ccbr.github.io/quarto-fnl
-  search: false
-  sidebar:
-    - text: Home
-      href: README.md
-    - section: "Templates"
-      contents:
-        - template.qmd
-        - template-revealjs.qmd
-        - template-dashboard.qmd
+  search: true
   navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: "Templates"
+        menu:
+          - template.qmd
+          - template-revealjs.qmd
+          - template-dashboard.qmd
     right: 
       - icon: github
         menu:

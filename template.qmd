@@ -1,5 +1,5 @@
 ---
-title: "example report with FNL theme"
+title: "default template"
 author: 
   - name: "Firstname Lastname, ABC"
     affiliation: 
@@ -26,3 +26,12 @@ plot_cars <- mtcars |>
   geom_point()
 ggplotly(plot_cars)
 ```
+
+## example images
+
+:::{.column width="45%"}
+![logo dark](/_extensions/fnl/fnl-logo-dark.png)
+:::
+:::{.column width="45%"}
+![logo light](/_extensions/fnl/fnl-logo-light.png)
+:::

@@ -1,5 +1,5 @@
 ---
-title: "Example presentation with Quarto x revealjs"
+title: "revealjs"
 mainfont: Roboto
 format:
   fnl-revealjs:
