@@ -1,4 +1,4 @@
-# FNL Theme for Quarto
+# FNL Themes for Quarto
 
 This is a Quarto template that assists you in creating a report, document, or
 presentation using the [FNLCR branding
@@ -37,8 +37,22 @@ format:
   fnl-html
 ```
 
-You can view a preview of the rendered templates:
+## Templates
 
-- HTML:
-- revealjs:
-- dashboard:
+| Format | Quarto Source | Rendered Example |
+|--------|--------------|-----------------|
+| HTML | [template.qmd](https://github.com/CCBR/quarto-fnl/blob/main/template.qmd) | [View HTML](https://ccbr.github.io/quarto-fnl/template.html) |
+| revealjs | [template-revealjs.qmd](https://github.com/CCBR/quarto-fnl/blob/main/template-revealjs.qmd) | [View revealjs](https://ccbr.github.io/quarto-fnl/template-revealjs.html) |
+| dashboard | [template-dashboard.qmd](https://github.com/CCBR/quarto-fnl/blob/main/template-dashboard.qmd) | [View dashboard](https://ccbr.github.io/quarto-fnl/template-dashboard.html) |
+
+## Examples
+
+See this theme in action!
+
+| Format | URL |
+|------|-----|
+| website | <https://ccbr.github.io/quarto-fnl> |
+| website | <https://ccbr.github.io/Tools> |
+| website | <https://ccbr.github.io/actions> |
+| website | <https://ccbr.github.io/HowTos/> |
+| revealjs | <https://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html> |

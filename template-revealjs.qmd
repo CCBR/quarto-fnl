@@ -1,5 +1,11 @@
 ---
 title: "revealjs"
+subtitle: "example revealjs presentation with FNL theme for quarto"
+author: 
+  - name: "Firstname Lastname, ABC"
+    affiliation: 
+      - Bioinformatics Software Engineer
+      - CCR Collaborative Bioinformatics Resource
 mainfont: Roboto
 format:
   fnl-revealjs:
@@ -36,3 +42,8 @@ here's some text to go alongside the image
 see the quarto docs for more info 
 <https://quarto.org/docs/presentations/revealjs/>
 :::
+
+### Back to the FNL template:
+
+- <https://github.com/CCBR/quarto-gnl>
+- <https://ccbr.github.io/quarto-fnl>

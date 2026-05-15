@@ -1,5 +1,5 @@
 ---
-title: "default template"
+title: "Default template"
 author: 
   - name: "Firstname Lastname, ABC"
     affiliation: 

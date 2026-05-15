@@ -4,6 +4,8 @@ format:
     fnl-dashboard
 ---
 
+Dashboards are great for interactive plots and widgets!
+
 ```{r example-plot}
 library(ggplot2)
 library(plotly)
