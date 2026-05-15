@@ -1,0 +1,11 @@
+Package: quarto.fnl
+Title: Custom FNL Theme for Quarto
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Imports:
+    quarto,
+    ggplot2,
+    plotly

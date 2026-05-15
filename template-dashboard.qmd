@@ -1,0 +1,14 @@
+---
+title: "Dashboard"
+format:
+    fnl-dashboard
+---
+
+```{r example-plot}
+library(ggplot2)
+library(plotly)
+plot_cars <- mtcars |>
+  ggplot(aes(mpg, cyl)) +
+  geom_point()
+ggplotly(plot_cars)
+```

@@ -1,0 +1,28 @@
+---
+title: "example report with FNL theme"
+author: 
+  - name: "Firstname Lastname, ABC"
+    affiliation: 
+      - Bioinformatics Software Engineer
+      - CCR Collaborative Bioinformatics Resource
+date: today
+date-format: MMM DD, YYYY
+format:
+    fnl-html:
+        code-link: true
+        code-fold: true
+---
+
+refer to the Quarto guide for details on writing documents with Quarto: 
+<https://quarto.org/>
+
+## example plot
+
+```{r example-plot}
+library(ggplot2)
+library(plotly)
+plot_cars <- mtcars |>
+  ggplot(aes(mpg, cyl)) +
+  geom_point()
+ggplotly(plot_cars)
+```

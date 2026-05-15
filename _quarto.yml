@@ -1,0 +1,40 @@
+project:
+  type: website
+  title: "quarto-fnl"
+  output-dir: _site
+
+website:
+  repo-url: https://github.com/CCBR/quarto-fnl
+  repo-actions: [edit, issue]
+  site-url: https://ccbr.github.io/quarto-fnl
+  search: false
+  sidebar:
+    - text: Home
+      href: README.md
+    - section: "Templates"
+      contents:
+        - template.qmd
+        - template-revealjs.qmd
+        - template-dashboard.qmd
+  navbar:
+    right: 
+      - icon: github
+        menu:
+        - text: Repo
+          href: https://github.com/CCBR/quarto-fnl
+        - text: Issues
+          href: https://github.com/CCBR/quarto-fnl/issues
+          
+  page-footer:
+    left: |
+      Created by the
+      [CCR Collaborative Bioinformatics Resource](https://github.com/CCBR)
+
+execute:
+  freeze: auto
+
+format:
+  fnl-html:
+    embed-resources: true
+    code-fold: true
+    toc: true

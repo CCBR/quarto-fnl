@@ -1,0 +1,21 @@
+title: fnl
+author: Kelly Sovacool
+version: 0.1.0
+quarto-required: ">=1.5.0"
+contributes:
+  formats:
+    html:
+      theme:
+        dark: [darkly, fnl-dark.scss]
+        light: [flatly, fnl-light.scss]
+      toc: true
+      code-fold: show
+      code-link: true
+    dashboard:
+      theme:
+        dark: [darkly, fnl-dark.scss]
+        light: [flatly, fnl-light.scss]
+      code-fold: hide
+      code-link: true
+    revealjs:
+      theme: fnl-light-revealjs.scss

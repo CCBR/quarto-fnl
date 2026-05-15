@@ -1,0 +1,38 @@
+---
+title: "Example presentation with Quarto x revealjs"
+mainfont: Roboto
+format:
+  fnl-revealjs:
+    logo: /_extensions/fnl/fnl-logo-light.png
+    embed-resources: true
+---
+
+## Example slide
+
+![](https://raw.githubusercontent.com/CCBR/reproducible-toolchain/36b3bc690081bbf9c1a87f7cff86ffe250d8b73e/img/toolchain-components-labeled.jpg)
+
+:::{.notes}
+- use this for presenter notes
+:::
+
+## Example two-column layout
+
+
+:::: {.column width="60%"}
+![](https://raw.githubusercontent.com/CCBR/reproducible-toolchain/36b3bc690081bbf9c1a87f7cff86ffe250d8b73e/img/nextflow-template-toolchain.jpg)
+::::
+
+:::: {.column width="30%" .align-right}
+here's some text to go alongside the image
+::::
+
+::: footer
+<https://github.com/CCBR/quarto-fnl>
+:::
+
+## Help
+
+:::{.align-center}
+see the quarto docs for more info 
+<https://quarto.org/docs/presentations/revealjs/>
+:::
