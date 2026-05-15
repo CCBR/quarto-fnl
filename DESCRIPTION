@@ -1,5 +1,7 @@
 Package: quarto.fnl
-Title: Custom FNL Theme for Quarto
+Title: Custom FNL Themes for Quarto
+Description: Custom Quarto extension with themes for the Frederick National Laboratory for Cancer Research. View the website for usage instructions and examples: https://ccbr.github.io/quarto-fnl
+Version: 0.1.0
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
