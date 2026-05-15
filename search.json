@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FNL Theme for Quarto",
+    "section": "",
+    "text": "This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.\n\n\nTo create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place\n\n\n\nYou may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto install extension CCBR/quarto-fnl\n\n\n\nTo use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\nYou can view a preview of the rendered templates:\n\nHTML:\nrevealjs:\ndashboard:"
+  },
+  {
+    "objectID": "index.html#creating-a-new-document",
+    "href": "index.html#creating-a-new-document",
+    "title": "FNL Theme for Quarto",
+    "section": "",
+    "text": "To create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place"
+  },
+  {
+    "objectID": "index.html#installation-for-existing-document",
+    "href": "index.html#installation-for-existing-document",
+    "title": "FNL Theme for Quarto",
+    "section": "",
+    "text": "You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto install extension CCBR/quarto-fnl"
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "FNL Theme for Quarto",
+    "section": "",
+    "text": "To use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\nYou can view a preview of the rendered templates:\n\nHTML:\nrevealjs:\ndashboard:"
+  },
+  {
+    "objectID": "template-revealjs.html#example-slide",
+    "href": "template-revealjs.html#example-slide",
+    "title": "revealjs",
+    "section": "Example slide",
+    "text": "Example slide\n\n\n\nuse this for presenter notes"
+  },
+  {
+    "objectID": "template-revealjs.html#example-two-column-layout",
+    "href": "template-revealjs.html#example-two-column-layout",
+    "title": "revealjs",
+    "section": "Example two-column layout",
+    "text": "Example two-column layout\n\n\n\nhere’s some text to go alongside the image\n\nhttps://github.com/CCBR/quarto-fnl"
+  },
+  {
+    "objectID": "template-revealjs.html#help",
+    "href": "template-revealjs.html#help",
+    "title": "revealjs",
+    "section": "Help",
+    "text": "Help\n\nsee the quarto docs for more info https://quarto.org/docs/presentations/revealjs/"
+  },
+  {
+    "objectID": "template.html",
+    "href": "template.html",
+    "title": "default template",
+    "section": "",
+    "text": "refer to the Quarto guide for details on writing documents with Quarto: https://quarto.org/"
+  },
+  {
+    "objectID": "template.html#example-plot",
+    "href": "template.html#example-plot",
+    "title": "default template",
+    "section": "example plot",
+    "text": "example plot\n\nCodelibrary(ggplot2)\nlibrary(plotly)\n\nWarning: package 'plotly' was built under R version 4.5.1\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nCodeplot_cars &lt;- mtcars |&gt;\n  ggplot(aes(mpg, cyl)) +\n  geom_point()\nggplotly(plot_cars)"
+  },
+  {
+    "objectID": "template.html#example-images",
+    "href": "template.html#example-images",
+    "title": "default template",
+    "section": "example images",
+    "text": "example images\n\n\n\nlogo dark\n\n\n\n\nlogo light"
+  }
+]
