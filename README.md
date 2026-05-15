@@ -1,6 +1,8 @@
 # FNL Theme for Quarto
 
-This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.
+This is a Quarto template that assists you in creating a report, document, or
+presentation using the [FNLCR branding
+guidelines](https://nih.sharepoint.com/sites/NCI-Fred/Communications/Branding).
 
 ## Creating a New Document
 
