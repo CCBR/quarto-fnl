@@ -3,14 +3,13 @@ name: quarto-publish
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: write
   pages: write
 
 jobs:
-
   quarto-publish:
     runs-on: ubuntu-latest
     steps:
@@ -21,7 +20,7 @@ jobs:
         run: quarto render
       - name: Render & Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
-        if: ${{ github.event_name == "push" && github.ref == "refs/heads/main" }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         with:
           target: gh-pages
           render: false
