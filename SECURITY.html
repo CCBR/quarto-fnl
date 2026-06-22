@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto-fnl</title>
+<title>security – quarto-fnl</title>
 <style>
 
 code{white-space: pre-wrap;}
@@ -19,41 +19,6 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
-}
-
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -4212,7 +4177,7 @@ vertical-align: -.125em;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -4270,16 +4235,17 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#fnl-themes-for-quarto" id="toc-fnl-themes-for-quarto" class="nav-link active" data-scroll-target="#fnl-themes-for-quarto">FNL Themes for Quarto</a>
+  <li><a href="#nci-standard-public-repository-security-policy" id="toc-nci-standard-public-repository-security-policy" class="nav-link active" data-scroll-target="#nci-standard-public-repository-security-policy">NCI Standard Public Repository Security Policy</a>
   <ul class="collapse">
-  <li><a href="#creating-a-new-document" id="toc-creating-a-new-document" class="nav-link" data-scroll-target="#creating-a-new-document">Creating a New Document</a></li>
-  <li><a href="#installation-for-existing-document" id="toc-installation-for-existing-document" class="nav-link" data-scroll-target="#installation-for-existing-document">Installation For Existing Document</a></li>
-  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a></li>
-  <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates">Templates</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  <li><a href="#maintained-versions" id="toc-maintained-versions" class="nav-link" data-scroll-target="#maintained-versions">Maintained Versions</a></li>
+  <li><a href="#vulnerability-disclosure" id="toc-vulnerability-disclosure" class="nav-link" data-scroll-target="#vulnerability-disclosure">Vulnerability Disclosure:</a>
+  <ul class="collapse">
+  <li><a href="#option-1-hhs-vulnerability-disclosure" id="toc-option-1-hhs-vulnerability-disclosure" class="nav-link" data-scroll-target="#option-1-hhs-vulnerability-disclosure">Option 1: HHS Vulnerability Disclosure</a></li>
+  <li><a href="#option-2-private-vulnerability-report" id="toc-option-2-private-vulnerability-report" class="nav-link" data-scroll-target="#option-2-private-vulnerability-report">Option 2: Private Vulnerability Report</a></li>
+  </ul></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/CCBR/quarto-fnl/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CCBR/quarto-fnl/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/CCBR/quarto-fnl/edit/main/SECURITY.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CCBR/quarto-fnl/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -4288,92 +4254,29 @@ vertical-align: -.125em;
 
 
 
-<section id="fnl-themes-for-quarto" class="level1">
-<h1>FNL Themes for Quarto</h1>
-<p>This is a Quarto template that assists you in creating a report, document, or presentation using the <a href="https://nih.sharepoint.com/sites/NCI-Fred/Communications/Branding">FNLCR branding guidelines</a>.</p>
-<section id="creating-a-new-document" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-new-document">Creating a New Document</h2>
-<p>To create a new document, use the following command:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> use template CCBR/quarto-fnl</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This will install the extension and create an example qmd file that you can use as a starting place</p>
+<section id="nci-standard-public-repository-security-policy" class="level1">
+<h1>NCI Standard Public Repository Security Policy</h1>
+<section id="maintained-versions" class="level2">
+<h2 class="anchored" data-anchor-id="maintained-versions">Maintained Versions</h2>
+<p>Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.<br>
+The developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information.</p>
 </section>
-<section id="installation-for-existing-document" class="level2">
-<h2 class="anchored" data-anchor-id="installation-for-existing-document">Installation For Existing Document</h2>
-<p>You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension CCBR/quarto-fnl</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="vulnerability-disclosure" class="level2">
+<h2 class="anchored" data-anchor-id="vulnerability-disclosure">Vulnerability Disclosure:</h2>
+<section id="option-1-hhs-vulnerability-disclosure" class="level3">
+<h3 class="anchored" data-anchor-id="option-1-hhs-vulnerability-disclosure">Option 1: HHS Vulnerability Disclosure</h3>
+<p>Follow the instructions listed in the <a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">HHS vulnerability disclosure policy</a>.</p>
 </section>
-<section id="usage" class="level2">
-<h2 class="anchored" data-anchor-id="usage">Usage</h2>
-<p>To use the format, you can use the format names <code>fnl-html</code>, <code>fnl-revealjs</code>, or <code>fnl-dashboard</code>. For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render report.qmd <span class="at">--to</span> fnl-html</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>or in your document yaml or <code>_quarto.yml</code> file:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  fnl-html</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="templates" class="level2">
-<h2 class="anchored" data-anchor-id="templates">Templates</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Format</th>
-<th>Quarto Source</th>
-<th>Rendered Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>HTML</td>
-<td><a href="https://github.com/CCBR/quarto-fnl/blob/main/template.qmd">template.qmd</a></td>
-<td><a href="https://ccbr.github.io/quarto-fnl/template.html">View HTML</a></td>
-</tr>
-<tr class="even">
-<td>revealjs</td>
-<td><a href="https://github.com/CCBR/quarto-fnl/blob/main/template-revealjs.qmd">template-revealjs.qmd</a></td>
-<td><a href="https://ccbr.github.io/quarto-fnl/template-revealjs.html">View revealjs</a></td>
-</tr>
-<tr class="odd">
-<td>dashboard</td>
-<td><a href="https://github.com/CCBR/quarto-fnl/blob/main/template-dashboard.qmd">template-dashboard.qmd</a></td>
-<td><a href="https://ccbr.github.io/quarto-fnl/template-dashboard.html">View dashboard</a></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples</h2>
-<p>See this theme in action!</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Format</th>
-<th>URL</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>website</td>
-<td><a href="https://ccbr.github.io/quarto-fnl" class="uri">https://ccbr.github.io/quarto-fnl</a></td>
-</tr>
-<tr class="even">
-<td>website</td>
-<td><a href="https://ccbr.github.io/Tools" class="uri">https://ccbr.github.io/Tools</a></td>
-</tr>
-<tr class="odd">
-<td>website</td>
-<td><a href="https://ccbr.github.io/actions" class="uri">https://ccbr.github.io/actions</a></td>
-</tr>
-<tr class="even">
-<td>website</td>
-<td><a href="https://ccbr.github.io/HowTos/" class="uri">https://ccbr.github.io/HowTos/</a></td>
-</tr>
-<tr class="odd">
-<td>revealjs</td>
-<td><a href="https://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html" class="uri">https://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html</a></td>
-</tr>
-</tbody>
-</table>
+<section id="option-2-private-vulnerability-report" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-private-vulnerability-report">Option 2: Private Vulnerability Report</h3>
+<ol type="1">
+<li>Click on the <strong>Security and quality</strong> tab of this repository.</li>
+<li>Locate the <strong>Report a vulnerability</strong> button. If the button is not on the <strong>Security and quality</strong> landing page, look under the <strong>Advisories</strong> section in the side bar.</li>
+<li>Click the <strong>Report a vulnerability</strong> button and submit the form. The developers will receive a notification of your submission.</li>
+</ol>
 
 
+</section>
 </section>
 </section>
 
@@ -4799,7 +4702,7 @@ vertical-align: -.125em;
 </div>   
     <div class="nav-footer-center">
        
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CCBR/quarto-fnl/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CCBR/quarto-fnl/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CCBR/quarto-fnl/edit/main/SECURITY.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/CCBR/quarto-fnl/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
        
     </div>
