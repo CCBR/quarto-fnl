@@ -45,6 +45,8 @@ $footer-bg: $black;
 $footer-fg: $white;
 
 $code-color: $dark-green;
+$code-block-border-color: $dark-teal;
+
 
 $callout-color-tip: $dark-green;
 $callout-color-note: $brighter-teal;
@@ -56,14 +58,16 @@ $font-family-sans-serif: "Roboto", Helvetica, "Source Sans Pro", sans-serif;
 $font-family-monospace: "Roboto Mono", "Andale Mono" "Source Code Pro",
   monospace;
 
-
-$presentation-font-size-root: 32px;
+$presentation-font-size-root: 28px;
 $presentation-heading-color: $teal;
-$body-color: $black;
+$body-color: $off-black-text;
 
 /*-- scss:rules --*/
 
-
+.reveal .slide {
+  background: linear-gradient(to bottom, $white, $light-grey-neutral ) !important;
+  background-size: 100% 100% !important;
+}
 .reveal .slide blockquote {
   border-left: 3px solid $teal !important;
   padding-left: 0.5em !important;
@@ -93,6 +97,8 @@ $body-color: $black;
   color: $body-color !important;
 }
 
+/* font size shortcuts */
+
 .small-text {
   font-size: small !important;
 }
@@ -113,9 +119,24 @@ $body-color: $black;
   font-size: large !important;
 }
 
+.x-large-text {
+  font-size: x-large !important;
+}
+
+.xx-large-text {
+  font-size: xx-large !important;
+}
+
+.xxx-large-text {
+  font-size: xxx-large !important;
+}
+
+/* color muted */
 .color-muted {
   color: $text-muted !important;
 }
+
+/* boxes and frames */
 
 .big-center {
   font-size: 60px !important;
@@ -123,6 +144,10 @@ $body-color: $black;
   text-align: center !important;
   vertical-align: middle !important;
   padding: 200px 0;
+}
+
+.vertical-align-top {
+  vertical-align: top !important;
 }
 
 .align-center {
@@ -147,10 +172,10 @@ $body-color: $black;
 }
 
 .filled-box {
-  border: 5px solid $dark-green !important;
+  border: 2px solid $pale-teal-neutral !important;
   border-radius: 5px !important;
   padding: 1px !important;
-  background: $dark-green !important;
+  background: $dark-teal !important;
   color: $white !important;
 }
 
@@ -194,4 +219,18 @@ $body-color: $black;
     flex: 1 1 100%;
     /* Full width on small screens */
   }
+}
+
+/* customize code block colors */
+
+.reveal .code-with-filename .code-with-filename-file {
+  background-color: $dark-teal !important; // or any hex/variable like $pale-teal-neutral, #e9ecef
+  color: $white !important;               // font color for the filename text
+}
+
+// Optional: ensure the inner <pre> / text inherits the color nicely
+.reveal .code-with-filename .code-with-filename-file pre,
+.reveal .code-with-filename .code-with-filename-file pre code {
+  color: inherit !important;
+  background-color: transparent !important;
 }
