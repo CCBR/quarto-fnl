@@ -45,6 +45,10 @@ format:
 | revealjs | [template-revealjs.qmd](https://github.com/CCBR/quarto-fnl/blob/main/template-revealjs.qmd) | [View revealjs](https://ccbr.github.io/quarto-fnl/template-revealjs.html) |
 | dashboard | [template-dashboard.qmd](https://github.com/CCBR/quarto-fnl/blob/main/template-dashboard.qmd) | [View dashboard](https://ccbr.github.io/quarto-fnl/template-dashboard.html) |
 
+## See also
+
+[quarto-version-selector](https://github.com/CCBR/quarto-version-selector) - extension providing a version dropdown menu for quarto websites
+
 ## Examples
 
 See this theme in action!
