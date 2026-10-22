@@ -1,10 +1,52 @@
 [
   {
+    "objectID": "template-revealjs.html#example-slide",
+    "href": "template-revealjs.html#example-slide",
+    "title": "revealjs",
+    "section": "Example slide",
+    "text": "Example slide\n\n\n\nuse this for presenter notes"
+  },
+  {
+    "objectID": "template-revealjs.html#example-two-column-layout",
+    "href": "template-revealjs.html#example-two-column-layout",
+    "title": "revealjs",
+    "section": "Example two-column layout",
+    "text": "Example two-column layout\n\n\n\nhere’s some text to go alongside the image\n\nhttps://github.com/CCBR/quarto-fnl"
+  },
+  {
+    "objectID": "template-revealjs.html#help",
+    "href": "template-revealjs.html#help",
+    "title": "revealjs",
+    "section": "Help",
+    "text": "Help\n\nsee the quarto docs for more info https://quarto.org/docs/presentations/revealjs/\n\nBack to the FNL template:\n\nhttps://github.com/CCBR/quarto-gnl\nhttps://ccbr.github.io/quarto-fnl"
+  },
+  {
+    "objectID": "template.html",
+    "href": "template.html",
+    "title": "Default template",
+    "section": "",
+    "text": "refer to the Quarto guide for details on writing documents with Quarto: https://quarto.org/"
+  },
+  {
+    "objectID": "template.html#example-plot",
+    "href": "template.html#example-plot",
+    "title": "Default template",
+    "section": "example plot",
+    "text": "example plot\n\n\nCode\nlibrary(ggplot2)\nlibrary(plotly)\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\nplot_cars &lt;- mtcars |&gt;\n  ggplot(aes(mpg, cyl)) +\n  geom_point()\nggplotly(plot_cars)"
+  },
+  {
+    "objectID": "template.html#example-images",
+    "href": "template.html#example-images",
+    "title": "Default template",
+    "section": "example images",
+    "text": "example images\n\n\n\n\nlogo dark\n\n\n\n\n\n\n\nlogo light"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "FNL Themes for Quarto",
     "section": "",
-    "text": "This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.\n\n\nTo create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place\n\n\n\nYou may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto install extension CCBR/quarto-fnl\n\n\n\nTo use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\n\n\n\n\n\n\nFormat\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard\n\n\n\n\n\n\nSee this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
+    "text": "This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.\n\n\nTo create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place\n\n\n\nYou may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto install extension CCBR/quarto-fnl\n\n\n\nTo use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\n\n\n\n\n\n\nFormat\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard\n\n\n\n\n\n\nquarto-version-selector - extension providing a version dropdown menu for quarto websites\n\n\n\nSee this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
   },
   {
     "objectID": "index.html#creating-a-new-document",
@@ -35,53 +77,18 @@
     "text": "Format\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard"
   },
   {
+    "objectID": "index.html#see-also",
+    "href": "index.html#see-also",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "quarto-version-selector - extension providing a version dropdown menu for quarto websites"
+  },
+  {
     "objectID": "index.html#examples",
     "href": "index.html#examples",
     "title": "FNL Themes for Quarto",
     "section": "",
     "text": "See this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
-  },
-  {
-    "objectID": "template.html",
-    "href": "template.html",
-    "title": "Default template",
-    "section": "",
-    "text": "refer to the Quarto guide for details on writing documents with Quarto: https://quarto.org/"
-  },
-  {
-    "objectID": "template.html#example-plot",
-    "href": "template.html#example-plot",
-    "title": "Default template",
-    "section": "example plot",
-    "text": "example plot\n\n\nCode\nlibrary(ggplot2)\nlibrary(plotly)\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\nplot_cars &lt;- mtcars |&gt;\n  ggplot(aes(mpg, cyl)) +\n  geom_point()\nggplotly(plot_cars)"
-  },
-  {
-    "objectID": "template.html#example-images",
-    "href": "template.html#example-images",
-    "title": "Default template",
-    "section": "example images",
-    "text": "example images\n\n\n\n\nlogo dark\n\n\n\n\n\n\n\nlogo light"
-  },
-  {
-    "objectID": "template-revealjs.html#example-slide",
-    "href": "template-revealjs.html#example-slide",
-    "title": "revealjs",
-    "section": "Example slide",
-    "text": "Example slide\n\n\n\nuse this for presenter notes"
-  },
-  {
-    "objectID": "template-revealjs.html#example-two-column-layout",
-    "href": "template-revealjs.html#example-two-column-layout",
-    "title": "revealjs",
-    "section": "Example two-column layout",
-    "text": "Example two-column layout\n\n\n\nhere’s some text to go alongside the image\n\nhttps://github.com/CCBR/quarto-fnl"
-  },
-  {
-    "objectID": "template-revealjs.html#help",
-    "href": "template-revealjs.html#help",
-    "title": "revealjs",
-    "section": "Help",
-    "text": "Help\n\nsee the quarto docs for more info https://quarto.org/docs/presentations/revealjs/\n\nBack to the FNL template:\n\nhttps://github.com/CCBR/quarto-gnl\nhttps://ccbr.github.io/quarto-fnl"
   },
   {
     "objectID": "SECURITY.html",
