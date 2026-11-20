@@ -53,9 +53,15 @@ All assets are bundled with the extension, so documents render offline with no
 calls to Google Fonts or GitHub. Bundled assets include:
 
 - Roboto and Roboto Mono fonts
-- Font Awesome icons
 - the banner image
 - the stylesheets
+
+Button icons such as `.btn-github` and `.btn-outline-email` use
+[Bootstrap Icons](https://icons.getbootstrap.com/), which Quarto already
+includes in every HTML document, so there is no icon font to install or update.
+To add Font Awesome icons to your own text, install the
+[fontawesome extension](https://github.com/quarto-ext/fontawesome) with
+`quarto add quarto-ext/fontawesome` and use its `fa` shortcode.
 
 The report styles only load for `fnl-report-html`, so `fnl-html`,
 `fnl-revealjs`, and `fnl-dashboard` documents are unaffected.

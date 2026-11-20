@@ -15,259 +15,231 @@
 
 /* =====================================
    SERVICE BUTTON ICONS
+   Icons come from Bootstrap Icons, which Quarto bundles with every HTML
+   document, so no icon font needs to be shipped with this extension.
    ===================================== */
 
 /* GitHub */
 .btn-github::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f09b";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f3ed";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-github::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f09b";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f3ed";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* OneDrive */
 .btn-onedrive::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f0ed";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f295";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-onedrive::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f0ed";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f295";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Google Drive */
 .btn-gdrive::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f3aa";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f3f0";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-gdrive::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f3aa";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f3f0";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Dropbox */
 .btn-dropbox::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f16b";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f7ed";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-dropbox::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f16b";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f7ed";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* LinkedIn */
 .btn-linkedin::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f08c";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f472";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-linkedin::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f08c";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f472";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Twitter/X */
 .btn-twitter::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\e61b";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f8db";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-twitter::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\e61b";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f8db";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Slack */
 .btn-slack::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f198";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f565";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-slack::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f198";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f565";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Discord */
 .btn-discord::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f392";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f300";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-discord::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f392";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f300";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* YouTube */
 .btn-youtube::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f167";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f62b";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-youtube::before {
-  font-family: "Font Awesome 6 Brands";
-  content: "\f167";
-  font-weight: 400;
+  font-family: "bootstrap-icons";
+  content: "\f62b";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Email */
 .btn-email::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f0e0";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f32c";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-email::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f0e0";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f32c";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Documentation */
 .btn-docs::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f02d";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f194";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-docs::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f02d";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f194";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Download */
 .btn-download::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f019";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f30a";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-download::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f019";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f30a";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Excel */
 .btn-excel::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f1c3";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f368";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-excel::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f1c3";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f368";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* PDF */
 .btn-pdf::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f1c1";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f63e";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-pdf::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f1c1";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f63e";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 /* Sitemap */
 .btn-sitemap::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f0e8";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f2ee";
   margin-right: 10px;
   font-size: 1.2em;
 }
 
 .btn-outline-sitemap::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f0e8";
-  font-weight: 900;
+  font-family: "bootstrap-icons";
+  content: "\f2ee";
   margin-right: 10px;
   font-size: 1.2em;
 }

@@ -8,7 +8,6 @@ contributes:
       theme: [flatly, fnl-report.scss]
       css:
         - resources/fonts/fonts.css
-        - resources/fontawesome/css/all.min.css
         - resources/css/html_post_styles.css
         - resources/css/author_affiliation.css
         - resources/css/buttons.css
