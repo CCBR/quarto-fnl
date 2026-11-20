@@ -1,7 +1,10 @@
+# quarto
 /.quarto/
 **/*.quarto_ipynb
 /_freeze
 /_site
+/.luarc.json
 
 # GenAI
 /.agents
+/.posit
