@@ -15,6 +15,7 @@ website:
       - text: "Templates"
         menu:
           - template.qmd
+          - template-report.qmd
           - template-revealjs.qmd
           - template-dashboard.qmd
     right: 
