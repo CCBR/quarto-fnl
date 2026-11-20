@@ -1,0 +1,76 @@
+/*-- scss:defaults --*/
+
+// fnl-report is self-contained: it does not import anything from ../fnl so it
+// can be installed, copied, or versioned on its own. Keep the brand palette
+// below in sync with ../fnl/fnl-light.scss.
+// https://nih.sharepoint.com/:b:/r/sites/NCI-Fred/Communications/Shared%20Documents/Branding%20guidelines%20LIVE.pdf?csf=1&web=1&e=e9PrVO
+
+// primary colors
+$black: #000000;
+$teal: #2A7386;
+$apple-green: #82C04D;
+$dark-green: #079246;
+$dark-teal: #10404D;
+
+// secondary neutrals
+$off-black-text: #3B3F3F;
+$pale-teal-neutral: #A6C7C9;
+$light-grey-neutral: #E2E2E2;
+$white: #ffffff;
+
+// secondary special
+$brighter-teal: #348FA6;
+$bright-green: #CFFDA9;
+$yellow: #F9EC38;
+
+// not part of the 2026 palette, kept for warning accents and deep shadows
+$orange: #ecba4c;
+$almost-black: #03191f;
+
+$primary: $dark-teal;
+$secondary: $apple-green;
+$success: $dark-green;
+$warning: $yellow;
+$info: $brighter-teal;
+
+$link-color: $teal;
+
+$footer-bg: $black;
+$footer-fg: $white;
+
+$code-color: $dark-green;
+$code-block-border-color: $apple-green;
+$code-block-border-left: $dark-green;
+
+$callout-color-tip: $dark-green;
+$callout-color-note: $brighter-teal;
+$callout-color-caution: $yellow;
+$callout-color-warning: $orange;
+
+// Roboto is bundled in resources/fonts; stop flatly from fetching Lato online.
+$web-font-path: false;
+$font-family-sans-serif: "Roboto", Helvetica, "Source Sans Pro", sans-serif;
+$font-family-monospace: "Roboto Mono", "Andale Mono", "Source Code Pro", monospace;
+
+
+/*-- scss:rules --*/
+
+// Brand tokens consumed by the plain CSS in resources/css. The token names are
+// historical; their values follow the current FNL palette.
+:root {
+  --ccbr-black: #{$black};
+  --ccbr-white: #{$white};
+  --ccbr-lime: #{$apple-green};
+  --ccbr-lime-light: #{$bright-green};
+  --ccbr-lime-dark: #{$dark-green};
+  --ccbr-teal: #{$teal};
+  --ccbr-teal-light: #{$brighter-teal};
+  --ccbr-teal-dark: #{$dark-teal};
+  --ccbr-almost-black: #{$almost-black};
+  --ccbr-orange: #{$orange};
+}
+
+.code-with-filename .code-with-filename-file {
+  background-color: $light-grey-neutral;
+  color: $off-black-text;
+}
