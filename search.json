@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "SECURITY.html",
+    "href": "SECURITY.html",
+    "title": "NCI Standard Public Repository Security Policy",
+    "section": "",
+    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information.\n\n\n\n\n\nFollow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
+  },
+  {
+    "objectID": "SECURITY.html#maintained-versions",
+    "href": "SECURITY.html#maintained-versions",
+    "title": "NCI Standard Public Repository Security Policy",
+    "section": "",
+    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information."
+  },
+  {
+    "objectID": "SECURITY.html#vulnerability-disclosure",
+    "href": "SECURITY.html#vulnerability-disclosure",
+    "title": "NCI Standard Public Repository Security Policy",
+    "section": "",
+    "text": "Follow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
+  },
+  {
     "objectID": "template-revealjs.html#example-slide",
     "href": "template-revealjs.html#example-slide",
     "title": "revealjs",
@@ -25,7 +46,7 @@
     "href": "index.html",
     "title": "FNL Themes for Quarto",
     "section": "",
-    "text": "This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.\n\n\nTo create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place\n\n\n\nYou may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto install extension CCBR/quarto-fnl\n\n\n\nTo use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\n\n\n\n\n\n\nFormat\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard\n\n\n\n\n\n\nquarto-version-selector - extension providing a version dropdown menu for quarto websites\n\n\n\nSee this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
+    "text": "This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.\n\n\nTo create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place\n\n\n\nYou may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto add extension CCBR/quarto-fnl\n\n\n\nTo use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\n\n\n\n\n\n\nFormat\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard\n\n\n\n\n\n\nquarto-version-selector - extension providing a version dropdown menu for quarto websites\n\n\n\nSee this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
   },
   {
     "objectID": "index.html#creating-a-new-document",
@@ -39,7 +60,7 @@
     "href": "index.html#installation-for-existing-document",
     "title": "FNL Themes for Quarto",
     "section": "",
-    "text": "You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto install extension CCBR/quarto-fnl"
+    "text": "You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto add extension CCBR/quarto-fnl"
   },
   {
     "objectID": "index.html#usage",
@@ -70,6 +91,13 @@
     "text": "See this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
   },
   {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "quarto-fnl",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2026 CCR Collaborative Bioinformatics Resource\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
     "objectID": "template.html",
     "href": "template.html",
     "title": "Default template",
@@ -89,33 +117,5 @@
     "title": "Default template",
     "section": "example images",
     "text": "example images\n\n\n\n\nlogo dark\n\n\n\n\n\n\n\nlogo light"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "quarto-fnl",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2026 CCR Collaborative Bioinformatics Resource\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
-  },
-  {
-    "objectID": "SECURITY.html",
-    "href": "SECURITY.html",
-    "title": "NCI Standard Public Repository Security Policy",
-    "section": "",
-    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information.\n\n\n\n\n\nFollow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
-  },
-  {
-    "objectID": "SECURITY.html#maintained-versions",
-    "href": "SECURITY.html#maintained-versions",
-    "title": "NCI Standard Public Repository Security Policy",
-    "section": "",
-    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information."
-  },
-  {
-    "objectID": "SECURITY.html#vulnerability-disclosure",
-    "href": "SECURITY.html#vulnerability-disclosure",
-    "title": "NCI Standard Public Repository Security Policy",
-    "section": "",
-    "text": "Follow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
   }
 ]
