@@ -1,0 +1,303 @@
+/* =====================================
+   CCBR KABLEEXTRA TABLE THEMES
+   Clean, non-conflicting styles for kbl() tables
+   
+   Add this CSS AFTER your main theme CSS
+   ===================================== */
+
+/* Override base table styles ONLY for themed tables */
+table.table-ccbr-classic,
+table.table-ccbr-bordered,
+table.table-ccbr-minimal,
+table.table-ccbr-gradient,
+table.table-ccbr-card {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* =====================================
+   THEME 1: CCBR CLASSIC
+   ===================================== */
+table.table-ccbr-classic {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px color-mix(in srgb, var(--ccbr-teal-light) 15%, transparent);
+}
+
+table.table-ccbr-classic thead {
+    background: linear-gradient(135deg, var(--ccbr-teal-dark) 0%, var(--ccbr-teal) 100%);
+}
+
+table.table-ccbr-classic thead th {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.3px;
+}
+
+table.table-ccbr-classic tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid color-mix(in srgb, var(--ccbr-teal-light) 10%, transparent);
+}
+
+table.table-ccbr-classic tbody tr:nth-child(even) {
+    background-color: color-mix(in srgb, var(--ccbr-teal-light) 3%, transparent);
+}
+
+table.table-ccbr-classic tbody tr:hover {
+    background-color: color-mix(in srgb, var(--ccbr-lime) 8%, transparent);
+    transform: scale(1.005);
+}
+
+table.table-ccbr-classic tbody td {
+    padding: 0.875rem 1.25rem;
+    color: var(--ccbr-teal-dark);
+    border: none;
+}
+
+/* =====================================
+   THEME 2: CCBR BORDERED
+   ===================================== */
+table.table-ccbr-bordered {
+    width: 100%;
+    margin: 1.5rem auto;
+    border: 2px solid var(--ccbr-teal-light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px color-mix(in srgb, var(--ccbr-teal-light) 20%, transparent);
+}
+
+table.table-ccbr-bordered thead {
+    background: linear-gradient(135deg, var(--ccbr-lime) 0%, var(--ccbr-lime-light) 100%);
+}
+
+table.table-ccbr-bordered thead th {
+    padding: 1rem 1.25rem;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid var(--ccbr-orange);
+    color: var(--ccbr-teal-dark);
+    letter-spacing: 0.5px;
+}
+
+table.table-ccbr-bordered tbody tr {
+    border-bottom: 1px solid color-mix(in srgb, var(--ccbr-teal-light) 20%, transparent);
+    transition: all 0.3s ease;
+}
+
+table.table-ccbr-bordered tbody td {
+    padding: 0.875rem 1.25rem;
+    color: var(--ccbr-teal-dark);
+    border-right: 1px solid color-mix(in srgb, var(--ccbr-teal-light) 10%, transparent);
+}
+
+table.table-ccbr-bordered tbody td:last-child {
+    border-right: none;
+}
+
+table.table-ccbr-bordered tbody tr:hover {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--ccbr-lime-light) 10%, transparent) 0%, color-mix(in srgb, var(--ccbr-lime) 5%, transparent) 100%);
+}
+
+/* =====================================
+   THEME 3: CCBR MINIMAL
+   ===================================== */
+table.table-ccbr-minimal {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+table.table-ccbr-minimal thead {
+    border-bottom: 3px solid var(--ccbr-lime);
+}
+
+table.table-ccbr-minimal thead th {
+    padding: 0.875rem 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--ccbr-teal-dark);
+    border: none;
+    background: transparent;
+}
+
+table.table-ccbr-minimal tbody tr {
+    border-bottom: 1px solid color-mix(in srgb, var(--ccbr-teal-light) 15%, transparent);
+    transition: background-color 0.2s ease;
+}
+
+table.table-ccbr-minimal tbody td {
+    padding: 0.75rem 1rem;
+    color: var(--ccbr-teal-dark);
+}
+
+table.table-ccbr-minimal tbody tr:hover {
+    background-color: color-mix(in srgb, var(--ccbr-teal-light) 4%, transparent);
+}
+
+table.table-ccbr-minimal tbody tr:last-child {
+    border-bottom: 2px solid var(--ccbr-teal-light);
+}
+
+/* =====================================
+   THEME 4: CCBR GRADIENT
+   ===================================== */
+table.table-ccbr-gradient {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px color-mix(in srgb, var(--ccbr-teal-light) 20%, transparent);
+}
+
+table.table-ccbr-gradient thead {
+    background: linear-gradient(135deg, var(--ccbr-teal-light) 0%, var(--ccbr-lime) 100%);
+    position: relative;
+}
+
+table.table-ccbr-gradient thead th {
+    padding: 1.125rem 1.25rem;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+table.table-ccbr-gradient tbody tr {
+    border-bottom: 1px solid color-mix(in srgb, var(--ccbr-teal-light) 10%, transparent);
+    transition: all 0.3s ease;
+}
+
+table.table-ccbr-gradient tbody tr:nth-child(odd) {
+    background-color: color-mix(in srgb, var(--ccbr-teal-light) 2%, transparent);
+}
+
+table.table-ccbr-gradient tbody tr:hover {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--ccbr-lime) 10%, transparent) 0%, color-mix(in srgb, var(--ccbr-teal-light) 5%, transparent) 100%);
+    transform: translateX(3px);
+}
+
+table.table-ccbr-gradient tbody td {
+    padding: 0.875rem 1.25rem;
+    color: var(--ccbr-teal-dark);
+    border: none;
+}
+
+/* =====================================
+   THEME 5: CCBR CARD
+   ===================================== */
+table.table-ccbr-card {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-spacing: 0 0.5rem;
+}
+
+table.table-ccbr-card thead th {
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--ccbr-teal);
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+
+table.table-ccbr-card tbody tr {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--ccbr-teal-light) 10%, transparent);
+    transition: all 0.3s ease;
+}
+
+table.table-ccbr-card tbody tr:hover {
+    box-shadow: 0 4px 20px color-mix(in srgb, var(--ccbr-lime) 20%, transparent);
+    transform: translateY(-2px);
+}
+
+table.table-ccbr-card tbody td {
+    padding: 1rem 1.25rem;
+    color: var(--ccbr-teal-dark);
+    border: none;
+}
+
+table.table-ccbr-card tbody td:first-child {
+    border-radius: 8px 0 0 8px;
+    border-left: 4px solid var(--ccbr-lime);
+}
+
+table.table-ccbr-card tbody td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+/* =====================================
+   UTILITY CLASSES
+   ===================================== */
+
+/* Size variants */
+.table-compact td,
+.table-compact th {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.9em;
+}
+
+.table-spacious td,
+.table-spacious th {
+    padding: 1.25rem 1.5rem !important;
+}
+
+/* Alignment */
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/* =====================================
+   USAGE IN R
+   ===================================== 
+
+library(kableExtra)
+
+# Basic usage
+mtcars %>%
+  head(10) %>%
+  kbl(table.attr = "class='table-ccbr-gradient'") %>%
+  kable_styling(bootstrap_options = "none")
+
+# With caption
+iris %>%
+  head() %>%
+  kbl(caption = "Iris Dataset",
+      table.attr = "class='table-ccbr-bordered'") %>%
+  kable_styling(bootstrap_options = "none")
+
+# Compact version
+mtcars %>%
+  head() %>%
+  kbl(table.attr = "class='table-ccbr-classic table-compact'") %>%
+  kable_styling(bootstrap_options = "none")
+
+# With customization
+mtcars %>%
+  head() %>%
+  kbl(table.attr = "class='table-ccbr-gradient'") %>%
+  kable_styling(bootstrap_options = "none", full_width = FALSE) %>%
+  column_spec(1, bold = TRUE) %>%
+  row_spec(3, background = "color-mix(in srgb, var(--ccbr-lime) 15%, transparent)")
+
+# IMPORTANT: Use bootstrap_options = "none" to prevent 
+# kableExtra from applying conflicting Bootstrap styles
+
+   ===================================== */

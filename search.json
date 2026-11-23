@@ -1,24 +1,108 @@
 [
   {
-    "objectID": "SECURITY.html",
-    "href": "SECURITY.html",
-    "title": "NCI Standard Public Repository Security Policy",
+    "objectID": "template-report.html",
+    "href": "template-report.html",
+    "title": "Report template",
     "section": "",
-    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information.\n\n\n\n\n\nFollow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
+    "text": "📝 Last modified: 11-23-2026"
   },
   {
-    "objectID": "SECURITY.html#maintained-versions",
-    "href": "SECURITY.html#maintained-versions",
-    "title": "NCI Standard Public Repository Security Policy",
-    "section": "",
-    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information."
+    "objectID": "template-report.html#header-2",
+    "href": "template-report.html#header-2",
+    "title": "Report template",
+    "section": "Header 2",
+    "text": "Header 2\n\nHeader 3\n\nHeader 4"
   },
   {
-    "objectID": "SECURITY.html#vulnerability-disclosure",
-    "href": "SECURITY.html#vulnerability-disclosure",
-    "title": "NCI Standard Public Repository Security Policy",
+    "objectID": "template-report.html#different-base-r-styles",
+    "href": "template-report.html#different-base-r-styles",
+    "title": "Report template",
+    "section": "Different Base R Styles",
+    "text": "Different Base R Styles\n\nEnhanced ScatterHorizontal BarDonut-style Pie\n\n\n\n\nCode\n# Random data with grid\nset.seed(789)\nx &lt;- runif(10, 1, 8)\ny &lt;- runif(10, 2, 9)\n\n# Enhanced scatter plot\nplot(x, y, \n     pch = 19, \n     col = \"#296b7f\", \n     cex = 2,\n     main = \"Enhanced Scatter Plot\",\n     xlab = \"X values\", \n     ylab = \"Y values\",\n     xlim = c(0, 10),\n     ylim = c(0, 10))\ngrid(col = \"gray\", lty = \"dotted\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Data for horizontal bars\nitems &lt;- c(\"Item A\", \"Item B\", \"Item C\", \"Item D\")\ncounts &lt;- c(15, 28, 22, 19)\n\n# Horizontal barplot\nbarplot(counts, \n        names.arg = items,\n        horiz = TRUE,\n        col = \"#7cc349\",\n        main = \"Horizontal Bar Chart\",\n        xlab = \"Count\",\n        border = \"#528230\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Simple data\nactivity &lt;- c(\"Coding\", \"Testing\", \"Documentation\", \"Meetings\")\ntime &lt;- c(40, 20, 25, 15)\ncolors &lt;- c(\"#4e9db5\", \"#7cc349\", \"#ecba4c\", \"#19424e\")\n\n# Create pie chart\npie(time, \n    labels = paste(activity, \"(\", time, \"%)\", sep = \"\"), \n    col = colors,\n    main = \"Time Allocation\",\n    clockwise = TRUE)"
+  },
+  {
+    "objectID": "template-report.html#more-base-r-variations",
+    "href": "template-report.html#more-base-r-variations",
+    "title": "Report template",
+    "section": "More Base R Variations",
+    "text": "More Base R Variations\n\nLine + PointsStacked BarMulti Pie\n\n\n\n\nCode\n# Time series style data\nset.seed(999)\ntime &lt;- 1:10\nvalues &lt;- cumsum(rnorm(10, 0.5, 1))\n\n# Line plot with points\nplot(time, values, \n     type = \"b\",\n     pch = 16,\n     col = \"#296b7f\",\n     lwd = 2,\n     main = \"Trend Over Time\",\n     xlab = \"Time Point\",\n     ylab = \"Cumulative Value\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Matrix for stacked bars\ndata_matrix &lt;- matrix(c(12, 8, 15, \n                       18, 12, 10, \n                       10, 15, 20), \n                     nrow = 3, byrow = TRUE)\ncolnames(data_matrix) &lt;- c(\"Group A\", \"Group B\", \"Group C\")\nrownames(data_matrix) &lt;- c(\"Category 1\", \"Category 2\", \"Category 3\")\n\n# Stacked barplot\nbarplot(data_matrix, \n        col = c(\"#4e9db5\", \"#7cc349\", \"#ecba4c\"),\n        main = \"Stacked Bar Chart\",\n        xlab = \"Groups\",\n        ylab = \"Values\",\n        legend.text = TRUE)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Split plotting area for multiple pies\npar(mfrow = c(1, 2))\n\n# First pie\npie1 &lt;- c(30, 70)\npie(pie1, \n    labels = c(\"Yes\", \"No\"), \n    col = c(\"#7cc349\", \"#ecba4c\"),\n    main = \"Survey A\")\n\n# Second pie  \npie2 &lt;- c(45, 55)\npie(pie2, \n    labels = c(\"Pass\", \"Fail\"), \n    col = c(\"#4e9db5\", \"#296b7f\"),\n    main = \"Survey B\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Top button\n\nBack to Top\n\n\n\nFooter\n\nCreated by the CCR Collaborative Bioinformatics Resource\nGitHub Documentation Email CCBR"
+  },
+  {
+    "objectID": "template.html",
+    "href": "template.html",
+    "title": "Default template",
     "section": "",
-    "text": "Follow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
+    "text": "refer to the Quarto guide for details on writing documents with Quarto: https://quarto.org/"
+  },
+  {
+    "objectID": "template.html#example-plot",
+    "href": "template.html#example-plot",
+    "title": "Default template",
+    "section": "example plot",
+    "text": "example plot\n\n\nCode\nlibrary(ggplot2)\nlibrary(plotly)\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\nplot_cars &lt;- mtcars |&gt;\n  ggplot(aes(mpg, cyl)) +\n  geom_point()\nggplotly(plot_cars)"
+  },
+  {
+    "objectID": "template.html#example-images",
+    "href": "template.html#example-images",
+    "title": "Default template",
+    "section": "example images",
+    "text": "example images\n\n\n\n\nlogo dark\n\n\n\n\n\n\n\nlogo light"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "quarto-fnl",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2026 CCR Collaborative Bioinformatics Resource\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.\n\n\nTo create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place\n\n\n\nYou may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto add CCBR/quarto-fnl\n\n\n\nTo use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\n\n\nquarto add extension CCBR/quarto-fnl also installs a second, independent extension, fnl-report. It provides the fnl-report-html format for reports with a title banner, styled buttons, tab themes, author/affiliation cards, and table styles:\nformat:\n  fnl-report-html\nAll assets are bundled with the extension, so documents render offline with no calls to Google Fonts or GitHub. Bundled assets include:\n\nRoboto and Roboto Mono fonts\nthe banner image\nthe stylesheets\n\nButton icons such as .btn-github and .btn-outline-email use Bootstrap Icons, which Quarto already includes in every HTML document, so there is no icon font to install or update. To add Font Awesome icons to your own text, install the fontawesome extension with quarto add quarto-ext/fontawesome and use its fa shortcode.\nThe report styles only load for fnl-report-html, so fnl-html, fnl-revealjs, and fnl-dashboard documents are unaffected.\nSee template-report.qmd for the available components, such as .btn-primary, .btn-outline-github, .panel-tabset .theme-ccbr-poppy, and .ccbr-footer.\n\n\n\n\n\n\n\nFormat\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nreport HTML\ntemplate-report.qmd\nView report\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard\n\n\n\n\n\n\nquarto-version-selector - extension providing a version dropdown menu for quarto websites\n\n\n\nSee this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
+  },
+  {
+    "objectID": "index.html#creating-a-new-document",
+    "href": "index.html#creating-a-new-document",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "To create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place"
+  },
+  {
+    "objectID": "index.html#installation-for-existing-document",
+    "href": "index.html#installation-for-existing-document",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto add CCBR/quarto-fnl"
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "To use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\n\n\nquarto add extension CCBR/quarto-fnl also installs a second, independent extension, fnl-report. It provides the fnl-report-html format for reports with a title banner, styled buttons, tab themes, author/affiliation cards, and table styles:\nformat:\n  fnl-report-html\nAll assets are bundled with the extension, so documents render offline with no calls to Google Fonts or GitHub. Bundled assets include:\n\nRoboto and Roboto Mono fonts\nthe banner image\nthe stylesheets\n\nButton icons such as .btn-github and .btn-outline-email use Bootstrap Icons, which Quarto already includes in every HTML document, so there is no icon font to install or update. To add Font Awesome icons to your own text, install the fontawesome extension with quarto add quarto-ext/fontawesome and use its fa shortcode.\nThe report styles only load for fnl-report-html, so fnl-html, fnl-revealjs, and fnl-dashboard documents are unaffected.\nSee template-report.qmd for the available components, such as .btn-primary, .btn-outline-github, .panel-tabset .theme-ccbr-poppy, and .ccbr-footer."
+  },
+  {
+    "objectID": "index.html#templates",
+    "href": "index.html#templates",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "Format\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nreport HTML\ntemplate-report.qmd\nView report\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard"
+  },
+  {
+    "objectID": "index.html#see-also",
+    "href": "index.html#see-also",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "quarto-version-selector - extension providing a version dropdown menu for quarto websites"
+  },
+  {
+    "objectID": "index.html#examples",
+    "href": "index.html#examples",
+    "title": "FNL Themes for Quarto",
+    "section": "",
+    "text": "See this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
   },
   {
     "objectID": "template-revealjs.html#example-slide",
@@ -42,80 +126,24 @@
     "text": "Help\n\nsee the quarto docs for more info https://quarto.org/docs/presentations/revealjs/\n\nBack to the FNL template:\n\nhttps://github.com/CCBR/quarto-gnl\nhttps://ccbr.github.io/quarto-fnl"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "FNL Themes for Quarto",
+    "objectID": "SECURITY.html",
+    "href": "SECURITY.html",
+    "title": "NCI Standard Public Repository Security Policy",
     "section": "",
-    "text": "This is a Quarto template that assists you in creating a report, document, or presentation using the FNLCR branding guidelines.\n\n\nTo create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place\n\n\n\nYou may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto add CCBR/quarto-fnl\n\n\n\nTo use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html\n\n\n\n\n\n\nFormat\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard\n\n\n\n\n\n\nquarto-version-selector - extension providing a version dropdown menu for quarto websites\n\n\n\nSee this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
+    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information.\n\n\n\n\n\nFollow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
   },
   {
-    "objectID": "index.html#creating-a-new-document",
-    "href": "index.html#creating-a-new-document",
-    "title": "FNL Themes for Quarto",
+    "objectID": "SECURITY.html#maintained-versions",
+    "href": "SECURITY.html#maintained-versions",
+    "title": "NCI Standard Public Repository Security Policy",
     "section": "",
-    "text": "To create a new document, use the following command:\nquarto use template CCBR/quarto-fnl\nThis will install the extension and create an example qmd file that you can use as a starting place"
+    "text": "Actively maintained versions of contained software will vary from repository to repository, or may not be relevant at all.\nThe developers of this repository will update this section if any actively maintained versions of the software need to be publicly disclosed. Otherwise, contact the developers directly for any version information."
   },
   {
-    "objectID": "index.html#installation-for-existing-document",
-    "href": "index.html#installation-for-existing-document",
-    "title": "FNL Themes for Quarto",
+    "objectID": "SECURITY.html#vulnerability-disclosure",
+    "href": "SECURITY.html#vulnerability-disclosure",
+    "title": "NCI Standard Public Repository Security Policy",
     "section": "",
-    "text": "You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:\nquarto add CCBR/quarto-fnl"
-  },
-  {
-    "objectID": "index.html#usage",
-    "href": "index.html#usage",
-    "title": "FNL Themes for Quarto",
-    "section": "",
-    "text": "To use the format, you can use the format names fnl-html, fnl-revealjs, or fnl-dashboard. For example:\nquarto render report.qmd --to fnl-html\nor in your document yaml or _quarto.yml file:\nformat:\n  fnl-html"
-  },
-  {
-    "objectID": "index.html#templates",
-    "href": "index.html#templates",
-    "title": "FNL Themes for Quarto",
-    "section": "",
-    "text": "Format\nQuarto Source\nRendered Example\n\n\n\n\nHTML\ntemplate.qmd\nView HTML\n\n\nrevealjs\ntemplate-revealjs.qmd\nView revealjs\n\n\ndashboard\ntemplate-dashboard.qmd\nView dashboard"
-  },
-  {
-    "objectID": "index.html#see-also",
-    "href": "index.html#see-also",
-    "title": "FNL Themes for Quarto",
-    "section": "",
-    "text": "quarto-version-selector - extension providing a version dropdown menu for quarto websites"
-  },
-  {
-    "objectID": "index.html#examples",
-    "href": "index.html#examples",
-    "title": "FNL Themes for Quarto",
-    "section": "",
-    "text": "See this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "quarto-fnl",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2026 CCR Collaborative Bioinformatics Resource\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
-  },
-  {
-    "objectID": "template.html",
-    "href": "template.html",
-    "title": "Default template",
-    "section": "",
-    "text": "refer to the Quarto guide for details on writing documents with Quarto: https://quarto.org/"
-  },
-  {
-    "objectID": "template.html#example-plot",
-    "href": "template.html#example-plot",
-    "title": "Default template",
-    "section": "example plot",
-    "text": "example plot\n\n\nCode\nlibrary(ggplot2)\nlibrary(plotly)\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\nplot_cars &lt;- mtcars |&gt;\n  ggplot(aes(mpg, cyl)) +\n  geom_point()\nggplotly(plot_cars)"
-  },
-  {
-    "objectID": "template.html#example-images",
-    "href": "template.html#example-images",
-    "title": "Default template",
-    "section": "example images",
-    "text": "example images\n\n\n\n\nlogo dark\n\n\n\n\n\n\n\nlogo light"
+    "text": "Follow the instructions listed in the HHS vulnerability disclosure policy.\n\n\n\n\nClick on the Security and quality tab of this repository.\nLocate the Report a vulnerability button. If the button is not on the Security and quality landing page, look under the Advisories section in the side bar.\nClick the Report a vulnerability button and submit the form. The developers will receive a notification of your submission."
   }
 ]

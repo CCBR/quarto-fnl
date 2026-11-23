@@ -4243,6 +4243,10 @@ vertical-align: -.125em;
  <span class="dropdown-text">Default template</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="./template-report.html">
+ <span class="dropdown-text">Report template</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="./template-revealjs.html">
  <span class="dropdown-text">revealjs</span></a>
   </li>  
@@ -4293,7 +4297,10 @@ vertical-align: -.125em;
   <ul class="collapse">
   <li><a href="#creating-a-new-document" id="toc-creating-a-new-document" class="nav-link" data-scroll-target="#creating-a-new-document">Creating a New Document</a></li>
   <li><a href="#installation-for-existing-document" id="toc-installation-for-existing-document" class="nav-link" data-scroll-target="#installation-for-existing-document">Installation For Existing Document</a></li>
-  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a></li>
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a>
+  <ul class="collapse">
+  <li><a href="#report-format" id="toc-report-format" class="nav-link" data-scroll-target="#report-format">Report format</a></li>
+  </ul></li>
   <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates">Templates</a></li>
   <li><a href="#see-also" id="toc-see-also" class="nav-link" data-scroll-target="#see-also">See also</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
@@ -4329,6 +4336,21 @@ vertical-align: -.125em;
 <p>or in your document yaml or <code>_quarto.yml</code> file:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  fnl-html</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="report-format" class="level3">
+<h3 class="anchored" data-anchor-id="report-format">Report format</h3>
+<p><code>quarto add extension CCBR/quarto-fnl</code> also installs a second, independent extension, <code>fnl-report</code>. It provides the <code>fnl-report-html</code> format for reports with a title banner, styled buttons, tab themes, author/affiliation cards, and table styles:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  fnl-report-html</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>All assets are bundled with the extension, so documents render offline with no calls to Google Fonts or GitHub. Bundled assets include:</p>
+<ul>
+<li>Roboto and Roboto Mono fonts</li>
+<li>the banner image</li>
+<li>the stylesheets</li>
+</ul>
+<p>Button icons such as <code>.btn-github</code> and <code>.btn-outline-email</code> use <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, which Quarto already includes in every HTML document, so there is no icon font to install or update. To add Font Awesome icons to your own text, install the <a href="https://github.com/quarto-ext/fontawesome">fontawesome extension</a> with <code>quarto add quarto-ext/fontawesome</code> and use its <code>fa</code> shortcode.</p>
+<p>The report styles only load for <code>fnl-report-html</code>, so <code>fnl-html</code>, <code>fnl-revealjs</code>, and <code>fnl-dashboard</code> documents are unaffected.</p>
+<p>See <a href="https://github.com/CCBR/quarto-fnl/blob/main/template-report.qmd">template-report.qmd</a> for the available components, such as <code>.btn-primary</code>, <code>.btn-outline-github</code>, <code>.panel-tabset .theme-ccbr-poppy</code>, and <code>.ccbr-footer</code>.</p>
+</section>
 </section>
 <section id="templates" class="level2">
 <h2 class="anchored" data-anchor-id="templates">Templates</h2>
@@ -4347,11 +4369,16 @@ vertical-align: -.125em;
 <td><a href="https://ccbr.github.io/quarto-fnl/template.html">View HTML</a></td>
 </tr>
 <tr class="even">
+<td>report HTML</td>
+<td><a href="https://github.com/CCBR/quarto-fnl/blob/main/template-report.qmd">template-report.qmd</a></td>
+<td><a href="https://ccbr.github.io/quarto-fnl/template-report.html">View report</a></td>
+</tr>
+<tr class="odd">
 <td>revealjs</td>
 <td><a href="https://github.com/CCBR/quarto-fnl/blob/main/template-revealjs.qmd">template-revealjs.qmd</a></td>
 <td><a href="https://ccbr.github.io/quarto-fnl/template-revealjs.html">View revealjs</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>dashboard</td>
 <td><a href="https://github.com/CCBR/quarto-fnl/blob/main/template-dashboard.qmd">template-dashboard.qmd</a></td>
 <td><a href="https://ccbr.github.io/quarto-fnl/template-dashboard.html">View dashboard</a></td>
