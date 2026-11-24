@@ -4,7 +4,7 @@
     "href": "template-report.html",
     "title": "Report template",
     "section": "",
-    "text": "📝 Last modified: 11-23-2026"
+    "text": "📝 Last modified: 11-24-2026"
   },
   {
     "objectID": "template-report.html#header-2",
@@ -28,32 +28,39 @@
     "text": "More Base R Variations\n\nLine + PointsStacked BarMulti Pie\n\n\n\n\nCode\n# Time series style data\nset.seed(999)\ntime &lt;- 1:10\nvalues &lt;- cumsum(rnorm(10, 0.5, 1))\n\n# Line plot with points\nplot(time, values, \n     type = \"b\",\n     pch = 16,\n     col = \"#296b7f\",\n     lwd = 2,\n     main = \"Trend Over Time\",\n     xlab = \"Time Point\",\n     ylab = \"Cumulative Value\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Matrix for stacked bars\ndata_matrix &lt;- matrix(c(12, 8, 15, \n                       18, 12, 10, \n                       10, 15, 20), \n                     nrow = 3, byrow = TRUE)\ncolnames(data_matrix) &lt;- c(\"Group A\", \"Group B\", \"Group C\")\nrownames(data_matrix) &lt;- c(\"Category 1\", \"Category 2\", \"Category 3\")\n\n# Stacked barplot\nbarplot(data_matrix, \n        col = c(\"#4e9db5\", \"#7cc349\", \"#ecba4c\"),\n        main = \"Stacked Bar Chart\",\n        xlab = \"Groups\",\n        ylab = \"Values\",\n        legend.text = TRUE)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Split plotting area for multiple pies\npar(mfrow = c(1, 2))\n\n# First pie\npie1 &lt;- c(30, 70)\npie(pie1, \n    labels = c(\"Yes\", \"No\"), \n    col = c(\"#7cc349\", \"#ecba4c\"),\n    main = \"Survey A\")\n\n# Second pie  \npie2 &lt;- c(45, 55)\npie(pie2, \n    labels = c(\"Pass\", \"Fail\"), \n    col = c(\"#4e9db5\", \"#296b7f\"),\n    main = \"Survey B\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Top button\n\nBack to Top\n\n\n\nFooter\n\nCreated by the CCR Collaborative Bioinformatics Resource\nGitHub Documentation Email CCBR"
   },
   {
-    "objectID": "template.html",
-    "href": "template.html",
-    "title": "Default template",
-    "section": "",
-    "text": "refer to the Quarto guide for details on writing documents with Quarto: https://quarto.org/"
-  },
-  {
-    "objectID": "template.html#example-plot",
-    "href": "template.html#example-plot",
-    "title": "Default template",
-    "section": "example plot",
-    "text": "example plot\n\n\nCode\nlibrary(ggplot2)\nlibrary(plotly)\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\nplot_cars &lt;- mtcars |&gt;\n  ggplot(aes(mpg, cyl)) +\n  geom_point()\nggplotly(plot_cars)"
-  },
-  {
-    "objectID": "template.html#example-images",
-    "href": "template.html#example-images",
-    "title": "Default template",
-    "section": "example images",
-    "text": "example images\n\n\n\n\nlogo dark\n\n\n\n\n\n\n\nlogo light"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
+    "objectID": "CHANGELOG.html",
+    "href": "CHANGELOG.html",
     "title": "quarto-fnl",
     "section": "",
-    "text": "MIT License\nCopyright (c) 2026 CCR Collaborative Bioinformatics Resource\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    "text": "Themes for Quarto using FNL branding guidelines! This repository provides two theme extensions:\n\nfnl: light and dark themes for HTML and revealjs formats.\nfnl-report: light theme specifically for analysis reports in HTML formats.\n\nView the documentation website for more details on usage and customization: https://ccbr.github.io/quarto-fnl/"
+  },
+  {
+    "objectID": "CHANGELOG.html#quarto-fnl-development-version",
+    "href": "CHANGELOG.html#quarto-fnl-development-version",
+    "title": "quarto-fnl",
+    "section": "",
+    "text": "Themes for Quarto using FNL branding guidelines! This repository provides two theme extensions:\n\nfnl: light and dark themes for HTML and revealjs formats.\nfnl-report: light theme specifically for analysis reports in HTML formats.\n\nView the documentation website for more details on usage and customization: https://ccbr.github.io/quarto-fnl/"
+  },
+  {
+    "objectID": "template-revealjs.html#example-slide",
+    "href": "template-revealjs.html#example-slide",
+    "title": "revealjs",
+    "section": "Example slide",
+    "text": "Example slide\n\n\n\nuse this for presenter notes"
+  },
+  {
+    "objectID": "template-revealjs.html#example-two-column-layout",
+    "href": "template-revealjs.html#example-two-column-layout",
+    "title": "revealjs",
+    "section": "Example two-column layout",
+    "text": "Example two-column layout\n\n\n\nhere’s some text to go alongside the image\n\nhttps://github.com/CCBR/quarto-fnl"
+  },
+  {
+    "objectID": "template-revealjs.html#help",
+    "href": "template-revealjs.html#help",
+    "title": "revealjs",
+    "section": "Help",
+    "text": "Help\n\nsee the quarto docs for more info https://quarto.org/docs/presentations/revealjs/\n\nBack to the FNL template:\n\nhttps://github.com/CCBR/quarto-gnl\nhttps://ccbr.github.io/quarto-fnl"
   },
   {
     "objectID": "index.html",
@@ -105,25 +112,32 @@
     "text": "See this theme in action!\n\n\n\nFormat\nURL\n\n\n\n\nwebsite\nhttps://ccbr.github.io/quarto-fnl\n\n\nwebsite\nhttps://ccbr.github.io/Tools\n\n\nwebsite\nhttps://ccbr.github.io/actions\n\n\nwebsite\nhttps://ccbr.github.io/HowTos/\n\n\nrevealjs\nhttps://ccbr.github.io/reproducible-toolchain/slides/abcs-tech-workshop-2026-05.html"
   },
   {
-    "objectID": "template-revealjs.html#example-slide",
-    "href": "template-revealjs.html#example-slide",
-    "title": "revealjs",
-    "section": "Example slide",
-    "text": "Example slide\n\n\n\nuse this for presenter notes"
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "quarto-fnl",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2026 CCR Collaborative Bioinformatics Resource\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
   },
   {
-    "objectID": "template-revealjs.html#example-two-column-layout",
-    "href": "template-revealjs.html#example-two-column-layout",
-    "title": "revealjs",
-    "section": "Example two-column layout",
-    "text": "Example two-column layout\n\n\n\nhere’s some text to go alongside the image\n\nhttps://github.com/CCBR/quarto-fnl"
+    "objectID": "template.html",
+    "href": "template.html",
+    "title": "Default template",
+    "section": "",
+    "text": "refer to the Quarto guide for details on writing documents with Quarto: https://quarto.org/"
   },
   {
-    "objectID": "template-revealjs.html#help",
-    "href": "template-revealjs.html#help",
-    "title": "revealjs",
-    "section": "Help",
-    "text": "Help\n\nsee the quarto docs for more info https://quarto.org/docs/presentations/revealjs/\n\nBack to the FNL template:\n\nhttps://github.com/CCBR/quarto-gnl\nhttps://ccbr.github.io/quarto-fnl"
+    "objectID": "template.html#example-plot",
+    "href": "template.html#example-plot",
+    "title": "Default template",
+    "section": "example plot",
+    "text": "example plot\n\n\nCode\nlibrary(ggplot2)\nlibrary(plotly)\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\n\nCode\nplot_cars &lt;- mtcars |&gt;\n  ggplot(aes(mpg, cyl)) +\n  geom_point()\nggplotly(plot_cars)"
+  },
+  {
+    "objectID": "template.html#example-images",
+    "href": "template.html#example-images",
+    "title": "Default template",
+    "section": "example images",
+    "text": "example images\n\n\n\n\nlogo dark\n\n\n\n\n\n\n\nlogo light"
   },
   {
     "objectID": "SECURITY.html",
