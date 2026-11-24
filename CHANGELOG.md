@@ -1,4 +1,4 @@
-## quarto-fnl development version
+## quarto-fnl 1.0.0
 
 Themes for Quarto using FNL branding guidelines!
 This repository provides two theme extensions:
