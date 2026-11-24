@@ -1,0 +1,52 @@
+name: draft-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version-tag:
+        description: |
+          Semantic version tag for the next release (e.g. v1.0.0).
+          If omitted, use conventional commit history.
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  draft-release:
+    runs-on: ubuntu-latest
+    # Release preparation only edits metadata; documentation dependencies need not be installed.
+    container: nciccbr/ccbr_actions:v0.9.0
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: CCBR/actions/draft-release@v0.9.0
+        with:
+          github-token: ${{ github.token }}
+          version-filepath: DESCRIPTION
+          description-filepath: DESCRIPTION
+          # Avoid the action's automatic R package fallback to NEWS.md.
+          changelog-filepath: ./CHANGELOG.md
+          version-tag: ${{ inputs.version-tag }}
+      - name: Sync both extension versions on the draft branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRAFT_BRANCH: release-draft
+        run: |
+          git fetch origin "$DRAFT_BRANCH"
+          git switch "$DRAFT_BRANCH"
+          git merge --ff-only "origin/$DRAFT_BRANCH"
+          python3 .github/scripts/sync_extension_version.py
+          python3 .github/scripts/sync_extension_version.py --check
+          if ! git diff --quiet -- _extensions/fnl/_extension.yml _extensions/fnl-report/_extension.yml; then
+            git add _extensions/fnl/_extension.yml _extensions/fnl-report/_extension.yml
+            git commit -m "chore: sync extension versions for release"
+            git push origin "$DRAFT_BRANCH"
+          fi
+          version="$(sed -n 's/^Version:[[:space:]]*//p' DESCRIPTION)"
+          gh release edit "v${version}" --target "$(git rev-parse HEAD)" --repo "$GITHUB_REPOSITORY"

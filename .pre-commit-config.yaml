@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: sync-extension-version
+        name: sync both extension versions with DESCRIPTION
+        entry: python3 .github/scripts/sync_extension_version.py
+        language: system
+        files: ^(DESCRIPTION|_extensions/(fnl|fnl-report)/_extension\.yml|\.github/scripts/sync_extension_version\.py)$
+        pass_filenames: false
