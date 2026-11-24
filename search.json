@@ -28,18 +28,11 @@
     "text": "More Base R Variations\n\nLine + PointsStacked BarMulti Pie\n\n\n\n\nCode\n# Time series style data\nset.seed(999)\ntime &lt;- 1:10\nvalues &lt;- cumsum(rnorm(10, 0.5, 1))\n\n# Line plot with points\nplot(time, values, \n     type = \"b\",\n     pch = 16,\n     col = \"#296b7f\",\n     lwd = 2,\n     main = \"Trend Over Time\",\n     xlab = \"Time Point\",\n     ylab = \"Cumulative Value\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Matrix for stacked bars\ndata_matrix &lt;- matrix(c(12, 8, 15, \n                       18, 12, 10, \n                       10, 15, 20), \n                     nrow = 3, byrow = TRUE)\ncolnames(data_matrix) &lt;- c(\"Group A\", \"Group B\", \"Group C\")\nrownames(data_matrix) &lt;- c(\"Category 1\", \"Category 2\", \"Category 3\")\n\n# Stacked barplot\nbarplot(data_matrix, \n        col = c(\"#4e9db5\", \"#7cc349\", \"#ecba4c\"),\n        main = \"Stacked Bar Chart\",\n        xlab = \"Groups\",\n        ylab = \"Values\",\n        legend.text = TRUE)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Split plotting area for multiple pies\npar(mfrow = c(1, 2))\n\n# First pie\npie1 &lt;- c(30, 70)\npie(pie1, \n    labels = c(\"Yes\", \"No\"), \n    col = c(\"#7cc349\", \"#ecba4c\"),\n    main = \"Survey A\")\n\n# Second pie  \npie2 &lt;- c(45, 55)\npie(pie2, \n    labels = c(\"Pass\", \"Fail\"), \n    col = c(\"#4e9db5\", \"#296b7f\"),\n    main = \"Survey B\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack to Top button\n\nBack to Top\n\n\n\nFooter\n\nCreated by the CCR Collaborative Bioinformatics Resource\nGitHub Documentation Email CCBR"
   },
   {
-    "objectID": "CHANGELOG.html",
-    "href": "CHANGELOG.html",
+    "objectID": "CHANGELOG.html#quarto-fnl-1.0.0",
+    "href": "CHANGELOG.html#quarto-fnl-1.0.0",
     "title": "quarto-fnl",
-    "section": "",
-    "text": "Themes for Quarto using FNL branding guidelines! This repository provides two theme extensions:\n\nfnl: light and dark themes for HTML and revealjs formats.\nfnl-report: light theme specifically for analysis reports in HTML formats.\n\nView the documentation website for more details on usage and customization: https://ccbr.github.io/quarto-fnl/"
-  },
-  {
-    "objectID": "CHANGELOG.html#quarto-fnl-development-version",
-    "href": "CHANGELOG.html#quarto-fnl-development-version",
-    "title": "quarto-fnl",
-    "section": "",
-    "text": "Themes for Quarto using FNL branding guidelines! This repository provides two theme extensions:\n\nfnl: light and dark themes for HTML and revealjs formats.\nfnl-report: light theme specifically for analysis reports in HTML formats.\n\nView the documentation website for more details on usage and customization: https://ccbr.github.io/quarto-fnl/"
+    "section": "quarto-fnl 1.0.0",
+    "text": "quarto-fnl 1.0.0\nThemes for Quarto using FNL branding guidelines! This repository provides two theme extensions:\n\nfnl: light and dark themes for HTML and revealjs formats.\nfnl-report: light theme specifically for analysis reports in HTML formats.\n\nView the documentation website for more details on usage and customization: https://ccbr.github.io/quarto-fnl/"
   },
   {
     "objectID": "template-revealjs.html#example-slide",
